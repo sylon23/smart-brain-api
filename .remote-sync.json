@@ -1,0 +1,23 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ec2-34-254-178-66.eu-west-1.compute.amazonaws.com",
+  "port": "22",
+  "target": "/srv/smart-brain-api",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "centos",
+  "keyfile": "C:/Users/onyinye.uche/Downloads/chef-key.ppk",
+  "watch": [
+    "/server.js",
+    "/Dockerfile",
+    "/docker-compose.yml"
+  ],
+  "transport": "scp"
+}
